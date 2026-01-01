@@ -1,0 +1,127 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+/* Form Box */
+.lost-found-form {
+  background: #1e1e1e;
+  padding: 25px 20px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid #2c2c2c;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.lost-found-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7);
+}
+
+/* Heading */
+.form-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+/* Inputs & Textareas */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: #181818;
+  color: #f5f5f5;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ffc107;
+  background-color: #202020;
+  outline: none;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: #ffc107;
+  color: #121212;
+  padding: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffca28;
+  box-shadow: 0 0 16px #ffc10766;
+}
+
+/* Label (if needed) */
+.report-type-label {
+  width: 100%;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: #ffc107;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* 📱 Mobile Friendly */
+@media (max-width: 480px) {
+  .lost-found-form {
+    padding: 18px 14px;
+    border-radius: 12px;
+    gap: 12px;
+  }
+
+  .form-heading {
+    font-size: 1.35rem;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 14px;
+    padding: 11px 12px;
+  }
+}

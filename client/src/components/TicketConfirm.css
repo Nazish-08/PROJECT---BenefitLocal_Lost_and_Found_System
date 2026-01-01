@@ -1,0 +1,565 @@
+/* Enhanced TicketConfirm.css - Yellow & Black Theme */
+.confirm-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  animation: slideInUp 0.6s ease-out;
+}
+
+.confirmation-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ffd700;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  animation: bounce 1s ease-in-out;
+}
+
+.confirmation-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.confirmation-header p {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+.ticket-card {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border: 2px solid #ffd700;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ticket-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.ticket-pnr {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.ticket-status {
+  background: #27ae60;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.ticket-status.confirmed {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+.route-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.station {
+  text-align: center;
+  flex: 1;
+}
+
+.station-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+.station-time {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+.journey-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.train-icon {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  animation: moveTrain 2s ease-in-out infinite;
+}
+
+.journey-duration {
+  color: #cccccc;
+  font-size: 0.9rem;
+  background: #333;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid #ffd700;
+}
+
+.ticket-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.detail-label {
+  color: #cccccc;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.fare-section {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffd700;
+  margin-bottom: 20px;
+}
+
+.fare-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.fare-amount {
+  color: #ffd700;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.booking-meta {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.meta-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+  color: #cccccc;
+}
+
+.meta-item:last-child {
+  border-bottom: none;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.btn-download, .btn-share, .btn-again {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000;
+  border: 2px solid #ffd700;
+}
+
+.btn-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+.btn-share {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: 2px solid #3498db;
+}
+
+.btn-share:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+}
+
+.btn-again {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  border: 2px solid #27ae60;
+}
+
+.btn-again:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(39, 174, 96, 0.4);
+}
+
+.important-info {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ffd700;
+  margin-top: 25px;
+}
+
+.important-info h4 {
+  color: #ffd700;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-left: 4px solid #ffd700;
+  padding-left: 12px;
+}
+
+.important-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.important-info li {
+  padding: 8px 0;
+  color: #cccccc;
+  border-bottom: 1px solid #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.important-info li:before {
+  content: '⚠️';
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.important-info li:last-child {
+  border-bottom: none;
+}
+
+.important-info strong {
+  color: #ffd700;
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes moveTrain {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* Security Features */
+.security-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.security-item {
+  text-align: center;
+  padding: 15px;
+  background: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #ffd700;
+}
+
+.security-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.security-text {
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+
+/* QR Code Section */
+.qr-section {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 2px solid #ffd700;
+  margin: 20px 0;
+}
+
+.qr-placeholder {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #000;
+}
+
+.qr-text {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+/* Emergency Contacts */
+.emergency-contacts {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ff6b6b;
+  margin-top: 20px;
+}
+
+.emergency-contacts h4 {
+  color: #ff6b6b;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #1a1a1a;
+  border-radius: 6px;
+  border: 1px solid #444;
+}
+
+.contact-name {
+  color: #cccccc;
+}
+
+.contact-number {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .confirm-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .ticket-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .route-info {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .station {
+    flex: none;
+  }
+  
+  .journey-line {
+    flex: none;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .ticket-details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+  
+  .security-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .confirmation-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .success-icon {
+    font-size: 3rem;
+  }
+  
+  .fare-amount {
+    font-size: 1.5rem;
+  }
+  
+  .security-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .confirm-container {
+    box-shadow: none;
+    border: 2px solid #000;
+    color: #000;
+    background: white;
+  }
+  
+  .ticket-card {
+    background: white;
+    border: 2px solid #000;
+    color: #000;
+  }
+  
+  .action-buttons,
+  .btn-download,
+  .btn-share,
+  .btn-again {
+    display: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .confirm-container {
+    background: #1a1a1a;
+    color: #ffd700;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .confirm-container {
+    border: 3px solid #ffd700;
+  }
+  
+  .ticket-card {
+    border: 3px solid #ffd700;
+  }
+  
+  .btn-download,
+  .btn-share,
+  .btn-again {
+    border-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .success-icon,
+  .train-icon {
+    animation: none;
+  }
+  
+  .btn-download:hover,
+  .btn-share:hover,
+  .btn-again:hover,
+  .detail-item:hover {
+    transform: none;
+  }
+}

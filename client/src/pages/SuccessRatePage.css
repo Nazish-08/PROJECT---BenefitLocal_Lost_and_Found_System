@@ -1,0 +1,29 @@
+.success-rate-container {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #121212;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #2c2c2c;
+}
+
+.explanation {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+.explanation p {
+  margin: 5px 0;
+  color: #cccccc;
+}
+
+.note {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}

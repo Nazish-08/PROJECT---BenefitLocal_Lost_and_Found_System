@@ -1,0 +1,270 @@
+/* Enhanced BookTicket.css - Yellow & Black Theme */
+.ticket-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  animation: slideInUp 0.6s ease-out;
+}
+
+.ticket-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ffd700;
+}
+
+.ticket-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-header p {
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+.form-section {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #ffd700;
+}
+
+.form-section h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  border-left: 4px solid #ffd700;
+  padding-left: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffd700;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 15px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #ffd700;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ffd700;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.option-card input {
+  position: absolute;
+  opacity: 0;
+}
+
+.option-content {
+  background: #1a1a1a;
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 15px 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.option-card input:checked + .option-content {
+  background: #ffd700;
+  color: #000;
+  border-color: #ffd700;
+  transform: scale(1.05);
+}
+
+.option-icon {
+  font-size: 1.5rem;
+}
+
+.option-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.passenger-selector {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1a1a1a;
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 10px 15px;
+  justify-content: center;
+}
+
+.passenger-btn {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.passenger-btn:hover {
+  background: #ffed4e;
+  transform: scale(1.1);
+}
+
+.passenger-count {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffd700;
+  min-width: 30px;
+  text-align: center;
+}
+
+.checkbox-group {
+  margin: 15px 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.fare-summary {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #ffd700;
+  margin: 25px 0;
+}
+
+.fare-summary h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fare-details {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.fare-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+  color: #cccccc;
+}
+
+.fare-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 0 0;
+  margin-top: 15px;
+  border-top: 2px solid #ffd700;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.total-amount {
+  color: #ffd700;
+  font-size: 1.4rem;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ticket-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .option-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,264 @@
+/* HomePage.css – Metro Dark + Yellow Accent */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;          /* deep charcoal */
+  color: #e0e0e0;                     /* soft white text */
+}
+
+/* ───────────────  NAVBAR  ─────────────── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #121212;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 42px;
+  width: 42px;
+  border-radius: 8px;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffc107;                     /* yellow accent */
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffc107;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ───────────────  HERO  ─────────────── */
+.hero {
+  text-align: center;
+  padding: 100px 20px 70px;
+  background: linear-gradient(to right, #1e1e1e, #121212);
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #ffc107;
+}
+
+.hero p {
+  font-size: 19px;
+  margin: 0 auto 36px;
+  color: #cccccc;
+  max-width: 680px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 13px 28px;
+  background-color: #ffc107;
+  color: #121212;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 14px rgba(255, 193, 7, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffca28;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 193, 7, 0.35);
+}
+
+.btn-secondary {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #2c2c2c;
+}
+
+.btn-secondary:hover {
+  background-color: #2a2a2a;
+}
+
+/* ───────────────  FEATURES  ─────────────── */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #121212;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7);
+  width: 290px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2c2c2c;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.9);
+}
+
+.card h2 {
+  margin-bottom: 14px;
+  color: #ffc107;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card p {
+  color: #cccccc;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ───────────────  REPORT SECTION CARD  ─────────────── */
+.report-section-card {
+  background: rgba(30, 30, 30, 0.9);
+  border: 1px solid #2c2c2c;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.75);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.85);
+}
+
+/* ─────────────── POPUP OVERLAY ─────────────── */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.9); /* dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.4s ease;
+}
+
+.popup-box {
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 32px 28px;
+  max-width: 520px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  border: 1px solid #2c2c2c;
+  animation: slideUp 0.5s ease;
+}
+
+.popup-box h2 {
+  color: #ffc107;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.popup-box p {
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* Button */
+.popup-btn {
+  margin-top: 16px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffc107;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(255, 193, 7, 0.25);
+  transition: all 0.3s ease;
+}
+
+.popup-btn:hover {
+  background-color: #ffca28;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 193, 7, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

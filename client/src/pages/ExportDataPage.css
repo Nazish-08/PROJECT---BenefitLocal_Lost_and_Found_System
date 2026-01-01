@@ -1,0 +1,97 @@
+/* src/pages/ExportDataPage.css */
+.export-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.stats {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border-left: 4px solid #007bff;
+}
+
+.stats h3 {
+  margin-top: 0;
+  color: #0056b3;
+}
+
+.stats p {
+  margin: 8px 0;
+  font-size: 16px;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+}
+
+.export-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-complete {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+.btn-import {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.import-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  background: #e7f3ff;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #17a2b8;
+}
+
+.info h3 {
+  margin-top: 0;
+  color: #0056b3;
+}
+
+.info ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.info li {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.info code {
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-family: monospace;
+}

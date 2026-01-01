@@ -1,0 +1,13 @@
+After cd write your File location in cmd 
+
+# Frontend ke liye
+cd C:\Users\Nazish\OneDrive\Desktop\BenefitLocal\client
+npm start
+
+# Backend ke liye (FastAPI)
+cd C:\Users\Nazish\Desktop\BenefitLocal\server
+venv\Scripts\activate
+uvicorn index:app --reload
+
+
+

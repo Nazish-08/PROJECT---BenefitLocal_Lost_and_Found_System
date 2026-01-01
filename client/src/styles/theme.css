@@ -1,0 +1,72 @@
+/* theme.css - Centralized styling */
+:root {
+  --bg-dark: #121212;
+  --bg-darker: #1a1a1a;
+  --text-light: #e0e0e0;
+  --accent-yellow: #ffc107;
+  --accent-yellow-dark: #d39e00;
+  --neutral-gray: #444;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --border-color: #333;
+  --shadow-dark: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-yellow-dark);
+}
+
+button {
+  font-family: inherit;
+  background-color: var(--accent-yellow);
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-yellow-dark);
+}
+
+input, select, textarea {
+  background-color: var(--bg-darker);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 20px var(--shadow-dark);
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  color: var(--text-light);
+}
+

@@ -1,0 +1,75 @@
+.otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #121212;
+  padding: 20px;
+}
+
+.otp-box {
+  background: #1e1e1e;
+  padding: 40px 30px;   /* thoda zyada space */
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 500px;    /* pehle 400px tha */
+  text-align: center;
+  border: 1px solid #2c2c2c;
+}
+
+
+.logo {
+    width: 212px;
+    margin-bottom: 31px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.otp-box h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffc107;
+}
+
+.otp-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background-color: #121212;
+  color: #e0e0e0;
+  border: 1px solid #2c2c2c;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.otp-box input::placeholder {
+  color: #888;
+}
+
+.otp-box input:focus {
+  border-color: #ffc107;
+  outline: none;
+}
+
+.otp-box button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background-color: #ffc107;
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.otp-box button:hover {
+  background-color: #ffca28;
+  box-shadow: 0 0 10px #ffc10755;
+}

@@ -1,0 +1,113 @@
+.hero-banner-container {
+  position: relative;
+  width: 100vw;
+  height: 68vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  background-color: #121212;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%) contrast(105%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* was -1 */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 700px;
+  padding: 0 20px;
+  background: none;
+  box-shadow: none;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-report-lost,
+.btn-report-found {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-report-lost {
+  background-color: #ffc107;
+  color: #121212;
+}
+
+.btn-report-found {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #2c2c2c;
+}
+
+.btn-report-lost:hover,
+.btn-report-found:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 193, 7, 0.3);
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px; /* thoda space dono buttons ke beech */
+  justify-content: center;
+  margin-bottom: 20px; /* neeche space taaki Book Ticket se thoda gap ho */
+}
+
+.hero-book-ticket {
+  display: flex;
+  justify-content: center; /* center mai rakhega */
+}
+
+.btn-book-ticket {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-book-ticket:hover {
+  background: #ffaa00;
+}
+
