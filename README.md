@@ -18,7 +18,7 @@ This project is created as an academic project to demonstrate modern frontend de
 - No copied or leaked backend code is used
 
 ## 📂 Project Output
-- All output screenshots are available inside the **`/Output Screenshot.rar/`** folder  
+- All output screenshots are available inside the **`/Output Screenshots/`** folder  
 - A detailed **PPT** is also included for better understanding of the project flow and features
 
 ## 🚀 Key Features
